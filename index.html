@@ -52,6 +52,8 @@ input,button,select,textarea{font:inherit;color:inherit}a{color:inherit}
 .s2.dark .s2a{border-top-color:rgba(255,255,255,.12)}.s2.dark .s2skip{color:#CDB8DC!important}.s2.dark .s2go{background:#E8C878!important;color:#1F0A2C!important}
 @media (max-width:620px){.s2g3,.s2g2{grid-template-columns:1fr}}
 @media (max-width:520px){.s2g{grid-template-columns:1fr}}
+@media (max-width:760px){.topnav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);padding-top:12px!important;padding-bottom:12px!important}
+.topnav .navlinks{display:none!important}.topnav .navbtns a:first-child{border:none!important;padding:8px 6px!important}}
 .fbtn{border:none;cursor:pointer}.fbtn[disabled]{opacity:.6;cursor:wait}
 .ferr{display:none;margin-top:8px;font-size:12px;color:#A32D2D}
 .fok{display:none;align-items:center;gap:10px;background:#E3F2EA;border-radius:16px;padding:14px 16px;max-width:500px;margin:0 auto;text-align:left;color:#1E6B45;font-size:13px;line-height:1.5}
@@ -65,7 +67,7 @@ input,button,select,textarea{font:inherit;color:inherit}a{color:inherit}
     </defs>
   </svg><div id="vis-container"><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
 <style>
-.bl{font-family:'Plus Jakarta Sans',sans-serif;color:#1F0A2C;background:#fff;border-radius:16px;border:0.5px solid #ECE6F0;overflow:hidden}
+.bl{font-family:'Plus Jakarta Sans',sans-serif;color:#1F0A2C;background:#fff;border-radius:16px;border:0.5px solid #ECE6F0;overflow:hidden;overflow:clip}
 .bl p,.bl h1,.bl h2,.bl h3{margin:0;color:inherit}
 .fr{position:absolute;border:6px solid #1F0A2C;border-radius:30px;background:#fff;overflow:hidden;box-sizing:border-box}
 .sc{width:390px;height:844px;transform-origin:0 0;position:absolute;left:0;top:0;background:#fff;font-family:'Plus Jakarta Sans',sans-serif;color:#1F0A2C;overflow:hidden;transition:opacity .35s}
@@ -187,10 +189,10 @@ html{overflow-y:scroll}
 </defs></svg>
 <div class="bl">
 
-<div style="display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px max(24px, calc((100% - 1152px) / 2));border-bottom:1px solid #ECE6F0;flex-wrap:wrap">
+<div style="display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px max(24px, calc((100% - 1152px) / 2));border-bottom:1px solid #ECE6F0;flex-wrap:nowrap" class="topnav">
 <svg height="18" width="80" fill="#521e6e" role="img" aria-label="BLYSS"><use href="#lg"></use></svg>
-<div style="display:flex;gap:16px;font-size:12px;font-weight:600;flex-wrap:wrap;white-space:nowrap"><a href="#how" style="text-decoration:none">How it works</a><a href="#pros" style="text-decoration:none">For professionals</a><a href="#trust" style="text-decoration:none">Trust and safety</a><a href="#faq-sec" style="text-decoration:none">FAQ</a></div>
-<div style="display:flex;gap:6px;white-space:nowrap;flex:none"><a href="#join" style="text-decoration:none;border:1.5px solid #ECE6F0;color:#3A1450;border-radius:999px;padding:8px 14px;font-size:12px;font-weight:700">Log in</a><a href="#join" style="text-decoration:none;background:#3A1450;color:#fff;border-radius:999px;padding:8px 14px;font-size:12px;font-weight:700">Join the waitlist</a></div>
+<div class="navlinks" style="display:flex;gap:16px;font-size:12px;font-weight:600;flex-wrap:wrap;white-space:nowrap"><a href="#how" style="text-decoration:none">How it works</a><a href="#pros" style="text-decoration:none">For professionals</a><a href="#trust" style="text-decoration:none">Trust and safety</a><a href="#faq-sec" style="text-decoration:none">FAQ</a></div>
+<div class="navbtns" style="display:flex;gap:6px;white-space:nowrap;flex:none"><a href="#join" style="text-decoration:none;border:1.5px solid #ECE6F0;color:#3A1450;border-radius:999px;padding:8px 14px;font-size:12px;font-weight:700">Log in</a><a href="#join" style="text-decoration:none;background:#3A1450;color:#fff;border-radius:999px;padding:8px 14px;font-size:12px;font-weight:700">Join the waitlist</a></div>
 </div>
 
 <div class="hero">
